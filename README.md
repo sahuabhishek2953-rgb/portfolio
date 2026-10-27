@@ -3,14 +3,14 @@
 > An interactive, retro CRT terminal-themed portfolio with a simulated BIOS boot sequence, bash-like command shell, rich command pages, and comprehensive automated test coverage.
 
 [![Tests](https://img.shields.io/badge/tests-54%20passed-33ff88?style=flat-square&logo=node.js)](file:///./test)
-[![Deployment](https://img.shields.io/badge/deployed%20on-Vercel-black?style=flat-square&logo=vercel)](https://vercel.com)
+[![Deployment](https://img.shields.io/badge/deployed%20on-Vercel-black?style=flat-square&logo=vercel)](https://portfolio-zeta-steel-24.vercel.app/)
 [![License](https://img.shields.io/badge/license-MIT-5ee0ff?style=flat-square)](LICENSE)
 
 ---
 
 ## 🚀 Live Demo
 
-- **Production URL**: [abhishek-portfolio.vercel.app](https://vercel.com) *(or your deployed Vercel domain)*
+- **Live URL**: [portfolio-zeta-steel-24.vercel.app](https://portfolio-zeta-steel-24.vercel.app/)
 - **GitHub Repository**: [github.com/sahuabhishek2953-rgb/portfolio](https://github.com/sahuabhishek2953-rgb)
 
 ---
@@ -117,28 +117,6 @@ All portfolio content is decoupled and stored in [`data.js`](./data.js). To upda
 - `skills`: Add or modify language, frontend, backend, or database categories.
 - `projects`: Update project titles, descriptions, live demo links, and GitHub repositories.
 - `hackathons` & `certificates`: Add new awards or certificate image paths in `assets/certs/`.
-
----
-
-## 🚢 Deploying to Vercel
-
-### Option 1: Via GitHub (Recommended)
-1. Push your project to GitHub:
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: initial commit"
-   git branch -M main
-   git remote add origin https://github.com/sahuabhishek2953-rgb/portfolio.git
-   git push -u origin main
-   ```
-2. Import the repository in [vercel.com](https://vercel.com/new).
-3. Click **Deploy**. Vercel will automatically detect `vercel.json` and deploy it instantly.
-
-### Option 2: Via Vercel CLI
-```bash
-npx vercel
-```
 
 ---
 

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abhishek Sahu — Portfolio</title>
+<meta name="description" content="Terminal-style portfolio of Abhishek Sahu, full-stack developer. Type a command to explore.">
+<meta name="theme-color" content="#070a08">
+<meta property="og:title" content="Abhishek Sahu — Portfolio">
+<meta property="og:description" content="Terminal-style portfolio of Abhishek Sahu, full-stack developer. Type a command to explore.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/profile.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Abhishek Sahu — Portfolio">
+<meta name="twitter:description" content="Terminal-style portfolio of Abhishek Sahu, full-stack developer. Type a command to explore.">
+<meta name="twitter:image" content="assets/img/profile.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230b0f0c'/><path d='M7 10l7 6-7 6' stroke='%2333ff88' stroke-width='3' fill='none'/><path d='M17 23h8' stroke='%2333ff88' stroke-width='3'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+<div class="crt" aria-hidden="true"></div>
+
+<!-- 1. Boot screen -->
+<section id="boot" class="view" aria-live="polite">
+  <pre id="bootLog"></pre>
+  <div class="bar" id="bootBar"><i></i></div>
+  <p class="hint">press any key or tap to skip</p>
+</section>
+
+<!-- 2. Terminal -->
+<section id="terminal" class="view" hidden>
+  <div class="win">
+    <header class="titlebar">
+      <span class="dots"><i></i><i></i><i></i></span>
+      <span class="title">visitor@abhishek: ~</span>
+    </header>
+    <div class="body" id="termBody">
+      <div id="out"></div>
+      <form id="line" autocomplete="off">
+        <label for="cmd" class="prompt">visitor@abhishek:~$</label>
+        <input id="cmd" type="text" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off" aria-label="Terminal command">
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Command pages -->
+<section id="page" class="view" hidden>
+  <div class="pagebar">
+    <button class="back" id="backBtn">← back to terminal</button>
+    <span class="crumb" id="crumb"></span>
+  </div>
+  <main id="pageBody"></main>
+</section>
+
+<div id="lightbox" hidden><button aria-label="Close">×</button><img alt=""></div>
+
+<script src="data.js?v=3"></script>
+<script src="app.js?v=3"></script>
+</body>
+</html>

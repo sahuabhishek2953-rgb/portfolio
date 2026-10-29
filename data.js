@@ -94,7 +94,7 @@ window.DATA = {
       ],
       stack: ["TypeScript", "React 18", "Vite", "Fastify", "MapLibre GL", "Tailwind v4", "Zustand", "Docker"],
       repo: "https://github.com/sahuabhishek2953-rgb/RailYatra",
-      live: "https://railyatra-orpin.vercel.app/"
+      live: "https://railyatra-nine.vercel.app/"
     }
   ],
 
